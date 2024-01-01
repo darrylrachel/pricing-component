@@ -1,3 +1,6 @@
-body {
-  background: rgb(2, 82, 2);
-}
+@import "reset";
+@import "mixins";
+@import "globals";
+
+// Mobile 375px
+// Desktop 1440px

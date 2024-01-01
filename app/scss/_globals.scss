@@ -1,0 +1,43 @@
+$linear-gradient-lBlue: hsl(236, 72%, 79%);
+$linear-gradient-dBlue: hsl(237, 63%, 64%);
+$veryLightGrayishBlue: hsl(240, 78%, 98%);
+$lightGrayishBlue: hsl(234, 14%, 74%);
+$grayishBlue: hsl(233, 13%, 49%);
+$darkGrayishBlue: hsl(232, 13%, 33%);
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9375 rem;
+  font-weight: 700;
+}
+
+// Flexbox
+.flex {
+  display: flex;
+
+  &-jc-sb {justify-content: space-between;}
+  &-jc-c {justify-content: center;}
+  &-ai-c {align-items: center;}
+}
+
+// Visibility
+.hide-for-mobile {
+  @include breakpoint-down (medium) {
+    display: none;
+  }
+
+}
+.hide-for-desktop {
+  @include breakpoint-up (large) {
+    display: none;
+  }
+}
