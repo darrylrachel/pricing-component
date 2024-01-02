@@ -16,7 +16,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.9375 rem;
+  font-size: 0.9375rem;
   font-weight: 700;
 }
 
@@ -25,8 +25,11 @@ body {
   display: flex;
 
   &-jc-sb {justify-content: space-between;}
+  &-jc-sa {justify-content: space-around;}
   &-jc-c {justify-content: center;}
   &-ai-c {align-items: center;}
+  &-row {flex-direction: row;}
+  &-col {flex-direction: column;}
 }
 
 // Visibility
@@ -40,4 +43,16 @@ body {
   @include breakpoint-up (large) {
     display: none;
   }
+}
+
+// DELETE BEFORE FINALIZING
+.m-375 {
+  border: 1px solid magenta;
+  width: 375px;
+  max-width: 375px;
+}
+.d-1440 {
+  border: 1px solid magenta;
+  width: 1440px;
+  max-width: 1440px;
 }

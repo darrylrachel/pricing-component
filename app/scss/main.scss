@@ -4,3 +4,48 @@
 
 // Mobile 375px
 // Desktop 1440px
+
+@include breakpoint-down(small) {
+  body {
+    width: 100%;
+    height: 100vh;
+    // position: relative;
+
+    main {
+      background: url(../../images/bg-top.svg) center center no-repeat;
+      // position: absolute;
+      // z-index: -1;
+      // top: 60px;
+      // right: 50px;
+
+      .main__header {
+        margin-top: 4.375rem;
+
+        &-title {
+          color: $grayishBlue;
+          font-size: 2.0625rem;
+        }
+        &-sub {
+          margin-top: 2.9375rem;
+          padding: 0 1.875rem;
+
+          p {
+            color: $lightGrayishBlue;
+          }
+        }
+      }
+    }
+
+    .wrapper {
+      margin: 0 auto;
+    }
+  }
+  
+}
+
+@include breakpoint-up(large) {
+  body {
+    background: aqua;
+  }
+}
+
